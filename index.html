@@ -20,13 +20,13 @@
     <!-- Title -->
     <section>
         <div class="container px-5">
-            <div id="mycarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div id="titleCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="0" class="active"
+                    <button type="button" data-bs-target="#titleCarousel" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#titleCarousel" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#titleCarousel" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
@@ -40,11 +40,13 @@
                         <img src="./PIC/Artboard 1.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#mycarousel" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#titleCarousel"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#mycarousel" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#titleCarousel"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -53,14 +55,14 @@
     </section>
     <section>
         <div class="container px-5 pt-3">
-            <div class="d-grid d-md-flex justify-content-end"><button type="button"
-                    class="btn btn-dark rounded-pill" href="#">もっと見る ></button></div>
+            <div class="d-grid d-md-flex justify-content-end"><button type="button" class="btn btn-dark rounded-pill"
+                    href="#">もっと見る ></button></div>
         </div>
     </section>
 
     <!-- Subtitle -->
     <section>
-        <div class="container px-5">
+        <div class="container-fluid px-5">
             <div class="px-5 py-3 my-5 text-center">
                 <h1 class="display-5 fw-bold text-body-emphasis">建築の持つ可能性を最大限する</h1>
                 <div class="col-lg-6 mx-auto">
@@ -76,28 +78,113 @@
 
     <!-- Services -->
     <section>
-        <!-- BIM -->
-        <div class="container p-5">
-            <h1 class="py-1">サービス</h1>
-            <div class="row align-items-center justify-content-betweem">
-                <div class="col-lg-8 col-md-6 border" style="height:360px;">
-                    <img src="" class="img-fluid" alt="">
+
+        <div class="container px-5 border">
+            <h1 class="py-2"><strong>サービス</strong></h1>
+            <h3><strong>BIM サービス</strong></h3>
+        </div>
+
+        <div class="container px-5 border">
+            <ul class="nav nav-pills mb-3 gap-2" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="active btn btn-outline-secondary" id="pills-modelling-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-modelling" type="button" role="tab" aria-controls="pills-modelling" aria-selected="true">
+                        BIM モデリング
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-secondary" id="pills-manage-tab" data-bs-toggle="pill" 
+                        data-bs-target="#pills-manage" type="button" role="tab" aria-controls="pills-manage" aria-selected="false">
+                        BIM マネージメント
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-secondary" id="pills-coordinator-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-coordinator" type="button" role="tab" aria-controls="pills-coordinator"aria-selected="false">
+                        BIM コーディネーター
+                    </button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+
+                <!-- BIM モデリング -->
+                <div class="tab-pane fade show active" id="pills-modelling" role="tabpanel"
+                    aria-labelledby="pills-modelling-tab" tabindex="0">
+                    <div class="row align-items-center justify-content-betweem">
+                        <div class="col-lg-8 col-md-6 border" style="height:360px;">
+                            <img src="" class="" alt="" height="360px">
+                        </div>
+                        <div class="col-lg-4 col-md-6 px-5 ">
+                            <h4 class="pb-2"><strong>BIM モデリング</strong></h4>
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam praesentium
+                                alias
+                                aspernatur quae provident.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta beatae provident,
+                                aliquam
+                                numquam voluptatem minus eum libero. Repellat voluptatum provident delectus autem
+                                voluptas
+                                cumque voluptatem debitis odit quae molestiae.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 px-5">
-                    <h3>BIM サービス</h3>
-                    <p class="lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam praesentium alias
-                        aspernatur quae provident.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta beatae provident, aliquam
-                        numquam voluptatem minus eum libero. Repellat voluptatum provident delectus autem voluptas
-                        cumque voluptatem debitis odit quae molestiae.
-                    </p>
+
+                <!-- BIM マネージメント -->
+                <div class="tab-pane fade" id="pills-manage" role="tabpanel" aria-labelledby="pills-manage-tab"
+                    tabindex="0">
+                    <div class="row align-items-center justify-content-betweem">
+                        <div class="col-lg-8 col-md-6 border" style="height:360px;">
+                            <img src="" class="" alt="">
+                        </div>
+                        <div class="col-lg-4 col-md-6 px-5 border">
+                            <h4 class="pb-2"><strong>BIM マネージメント</strong></h4>
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam praesentium
+                                alias
+                                aspernatur quae provident.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta beatae provident,
+                                aliquam
+                                numquam voluptatem minus eum libero. Repellat voluptatum provident delectus autem
+                                voluptas
+                                cumque voluptatem debitis odit quae molestiae.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BIM コーディネーター -->
+                <div class="tab-pane fade" id="pills-coordinator" role="tabpanel"
+                    aria-labelledby="pills-coordinator-tab" tabindex="0">
+                    <div class="row align-items-center justify-content-betweem">
+                        <div class="col-lg-8 col-md-6 border" style="height:360px;">
+                            <img src="" class="" alt="">
+                        </div>
+                        <div class="col-lg-4 col-md-6 px-5 border">
+                            <h4 class="pb-2"><strong>BIM コーディネーター</strong></h4>
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam praesentium
+                                alias
+                                aspernatur quae provident.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta beatae provident,
+                                aliquam
+                                numquam voluptatem minus eum libero. Repellat voluptatum provident delectus autem
+                                voluptas
+                                cumque voluptatem debitis odit quae molestiae.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Computational -->
+
         <div class="container p-5">
             <div class="row align-items-center justify-content-betweem">
                 <div class="col-lg-4 col-md-6 pe-5">
@@ -117,6 +204,7 @@
                 </div>
             </div>
         </div>
+
         <!-- 3D Printing -->
         <div class="container p-5">
             <div class="row align-items-center justify-content-betweem">
@@ -137,6 +225,8 @@
                 </div>
             </div>
         </div>
+
+
         <!-- AR/VR -->
         <div class="container p-5">
             <div class="row align-items-center justify-content-betweem">
@@ -158,6 +248,7 @@
             </div>
         </div>
     </section>
+
     <!-- Alliance -->
     <section>
         <div class="container p-5">
